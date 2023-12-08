@@ -60,7 +60,7 @@ collection.add(
 
 
 """
-    The two documents in the collection both reference "apple", but one is clearly a reference to the fruit, and
+    The first two documents in the collection both reference "apple", but one is clearly a reference to the fruit, and
     the other the company.  The NER model is able to detect the company as a named entity, but a regular semantic
     search runs the risk of grabbing both documents with a query. Take the following example:
 """
