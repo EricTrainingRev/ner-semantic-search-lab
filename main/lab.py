@@ -125,6 +125,7 @@ def create_ner_pipeline():
         Create an NER pipeline that can be used to extract entities from a query. You will use this method to
         initialize your NER pipeline for the rest of the lab
     """
+    # TODO: implement the NER pipeline and return it from the function
     raise RuntimeError("create_ner_pipeline() is not implemented")
 
 def get_Bass_Pro_Shop_company_document() -> list[str]:
@@ -133,8 +134,10 @@ def get_Bass_Pro_Shop_company_document() -> list[str]:
         extract the company name from the query, make sure it is formatted correctly, then filter your
         query to the collection using the correctly formatted company name
         
-        The method should return the id of the document and the document itself in a list
+        The method should return the id of the document and the document itself in a list.
     """
+    # TODO: implement the get_Bass_Pro_Shop_company_document() function within the try block. Make sure to
+    #       use the create_ner_pipeline() function to create the NER pipeline
     try:
         query = "Does Bass Pro Shop sell anything new?"
         ner_pipe = create_ner_pipeline()
@@ -151,6 +154,8 @@ def get_George_going_to_dinner_document() -> list[str]:
 
         The method should return the id of the document and the document itself in a list
     """
+    # TODO: implement the get_George_going_to_dinner_document() function within the try block. Make sure to
+    #       use the create_ner_pipeline() function to create the NER pipeline
     try:
         query = "why do you take George to Washington?"
         ner_pipe = create_ner_pipeline()
@@ -167,6 +172,8 @@ def get_George_Washington_Document() -> list[str]:
         
         The method should return the id of the document and the document itself in a list
     """
+    # TODO: implement the get_George_Washington_Document() function within the try block. Make sure to
+    #       use the create_ner_pipeline() function to create the NER pipeline
     try:
         query = "Did George Washington and Napoleon Bonaparte ever meet?"
         ner_pipe = create_ner_pipeline()
@@ -176,10 +183,5 @@ def get_George_Washington_Document() -> list[str]:
         return e
 
 if __name__ == "__main__":
-    print("\nStart of Lab Output\n")
-    results = [
-        get_Bass_Pro_Shop_company_document(), 
-        get_George_going_to_dinner_document(), 
-        get_George_Washington_Document()
-    ]
-    print(results)
+    # Use this space to test your code
+    pass
